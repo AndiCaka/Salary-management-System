@@ -12,10 +12,10 @@ import java.util.List;
 @Repository
 public interface UserRepository extends JpaRepository<User, Long> {
 
-    @Query("Select new com.example.entity.Response(d.date,u.salary,d.hour) from User u JOIN u.dayInList d")
+    @Query("Select new com.example.entity.Response(d.date,u.salary) from User u")
     public List<Response> nameDate();
 
-    @Query("Select new com.example.entity.Salary(u.firstName,u.lastName) from User u")
+    @Query("Select new com.example.entity.Salary(u.firstName,u.lastName,d.hour) from User u JOIN u.dayInList d")
     public List<Salary> fullName();
 
     @Query("Select new com.example.entity.Response(d.date_off) from DayOut d ")

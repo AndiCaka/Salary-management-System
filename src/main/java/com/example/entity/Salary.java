@@ -25,6 +25,7 @@ public class Salary {
     private double hour_in;
     private double hour_out;
     private double total_amount;
+    private int hour;
 
     public void calculateSalary() {
 
@@ -33,21 +34,21 @@ public class Salary {
         for(int i = 0;i<userRepo.nameDate().size();i++){
             for( int j = 0; j<userRepo.dayOff().size();j++){
                 if (response.getDate().isEqual(response.getDate_off())){
-                    if (response.getHour()>8){
-                        hour_out = response.getHour()-8;
+                    if (hour>8){
+                        hour_out = hour-8;
                         hour_in=8;
                     }else {
                         hour_out=0;
-                        hour_in=response.getHour();
+                        hour_in=hour;
                     }
                     total_amount = (hour_in*hour_amount*1.5)+(hour_out*hour_amount*2);
                 } else{
-                    if (response.getHour()>8){
-                        hour_out = response.getHour()-8;
+                    if (hour>8){
+                        hour_out = hour-8;
                         hour_in=8;
                     }else {
                         hour_out=0;
-                        hour_in=response.getHour();
+                        hour_in=hour;
                     }
                     total_amount = (hour_in*hour_amount*1)+(hour_out*hour_amount*1.25);
                 }
@@ -55,8 +56,9 @@ public class Salary {
         }
     }
 
-    public Salary(String firstName, String lastName) {
+    public Salary(String firstName, String lastName, int hour) {
         this.firstName = firstName;
         this.lastName = lastName;
+        this.hour=hour;
     }
 }

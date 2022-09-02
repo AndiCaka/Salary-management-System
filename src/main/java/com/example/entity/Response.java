@@ -24,20 +24,13 @@ public class Response {
 
     private LocalDate date;
     private double salary;
-    private int hour;
 
     private LocalDate date_off;
 
-//    private double hour_amount;
-//    private int hour_in;
-//    private int hour_out;
-//    private double total_amount;
 
-
-    public Response(LocalDate date, int salary, int hour) {
+    public Response(LocalDate date, int salary) {
         this.date = date;
         this.salary = salary;
-        this.hour = hour;
     }
     public Response(LocalDate date_off) {
         this.date_off = date_off;
