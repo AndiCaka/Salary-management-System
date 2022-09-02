@@ -1,6 +1,6 @@
 package com.example.salary;
 
-import com.example.User.User;
+import com.example.entity.User;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

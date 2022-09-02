@@ -1,8 +1,6 @@
 package com.example.salary;
 
-import com.example.User.User;
-import com.example.User.UserRepository;
-import com.example.day_in.DayInRepository;
+import com.example.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

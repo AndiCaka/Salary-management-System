@@ -1,4 +1,4 @@
-package com.example.day_out;
+package com.example.entity;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;

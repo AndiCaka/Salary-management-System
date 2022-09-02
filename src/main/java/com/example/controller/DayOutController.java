@@ -1,7 +1,7 @@
-package com.example.day_out;
+package com.example.controller;
 
-import com.example.User.User;
-import com.example.User.UserService;
+import com.example.entity.DayOut;
+import com.example.service.DayOutService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

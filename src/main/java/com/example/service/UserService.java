@@ -1,13 +1,12 @@
-package com.example.User;
+package com.example.service;
 
+import com.example.repository.UserRepository;
+import com.example.entity.User;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.rest.webmvc.ResourceNotFoundException;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Optional;
 
 @Service @RequiredArgsConstructor
 public class UserService {

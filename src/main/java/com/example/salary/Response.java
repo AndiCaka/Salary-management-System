@@ -1,6 +1,6 @@
 package com.example.salary;
 
-import com.example.User.UserRepository;
+import com.example.repository.UserRepository;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.AllArgsConstructor;

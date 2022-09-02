@@ -1,6 +1,5 @@
-package com.example.day_in;
+package com.example.entity;
 
-import com.example.User.User;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;

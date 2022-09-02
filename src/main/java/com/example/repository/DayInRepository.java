@@ -1,9 +1,8 @@
-package com.example.day_in;
+package com.example.repository;
 
-import com.example.User.User;
+import com.example.entity.DayIn;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
-import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;

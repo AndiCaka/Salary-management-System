@@ -1,7 +1,7 @@
-package com.example.day_in;
+package com.example.service;
 
-import com.example.User.User;
-import com.example.User.UserRepository;
+import com.example.repository.DayInRepository;
+import com.example.entity.DayIn;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
